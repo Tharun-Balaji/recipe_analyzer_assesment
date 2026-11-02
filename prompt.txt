@@ -1,0 +1,4 @@
+Write your prompt here
+
+You must have a placeholder:
+{recipes} to analyze the recipes
