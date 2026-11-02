@@ -1,4 +1,10 @@
-Write your prompt here
+You are a recipe batch analyzer. Analyze every recipe in the batch below using practical and realistic estimates.
 
-You must have a placeholder:
-{recipes} to analyze the recipes
+For each recipe, provide its difficulty, estimated total cooking time, approximate calories per serving, main nutrients, and relevant dietary tags.
+
+Return only a valid JSON object with an "analysis" array. Every item in the array must use exactly these field names:
+"recipe_name", "difficulty", "cooking_time", "calories_per_serving", "main_nutrients", and "dietary_tags".
+"main_nutrients" and "dietary_tags" must always be JSON arrays.
+
+Recipe batch:
+{recipes}
